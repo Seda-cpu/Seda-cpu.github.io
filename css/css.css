@@ -33,7 +33,7 @@ html, body {
     border-radius: 15px;
     height: 150px;
 }
-.muzik_div {
+.yazilarim_div {
     background: rgb(156,156,156);
     background: linear-gradient(0deg, rgba(156,156,156,1) 0%, rgba(148,148,148,1) 13%, rgba(127,127,127,1) 27%, rgba(108,108,108,1) 43%, rgba(100,100,100,1) 58%, rgba(92,91,91,1) 70%, rgba(84,84,84,1) 85%, rgba(60,60,60,1) 100%);
     border: 3px solid #a2a2a2; 
@@ -66,3 +66,31 @@ html, body {
     text-decoration: none;
     color: #ffffff;
 }
+
+.muzik_div {
+    background: rgb(156,156,156);
+    background: linear-gradient(0deg, rgba(156,156,156,1) 0%, rgba(148,148,148,1) 13%, rgba(127,127,127,1) 27%, rgba(108,108,108,1) 43%, rgba(100,100,100,1) 58%, rgba(92,91,91,1) 70%, rgba(84,84,84,1) 85%, rgba(60,60,60,1) 100%);
+    border: 3px solid #a2a2a2; 
+    border-radius: 15px;
+
+
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #545454;
+}
+.ikon_kutu{
+    background-color: #545454;
+    border: 3px solid #a2a2a2; 
+    border-radius: 15px;
+    width: 30%;
+    height: 74px;
+    display: flex; 
+    justify-content: center;
+}
+
+#player {
+    width: 92%;
+    margin-left: 4%;
+}​
+

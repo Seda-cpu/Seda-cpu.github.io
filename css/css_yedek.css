@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-image: url('/images/bg2.jpg');
+    background-size:cover;
+    /*background: rgb(21,21,21);
+    background: linear-gradient(90deg, rgba(21,21,21,1) 0%, rgba(125,125,125,1) 14%, rgba(82,82,82,1) 28%, rgba(108,108,108,1) 40%, rgba(100,100,100,1) 51%, rgba(68,68,68,1) 60%, rgba(60,60,60,1) 71%, rgba(44,44,44,1) 82%, rgba(52,52,52,1) 92%, rgba(52,52,52,1) 100%);
+    */
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.kartvizit {
+    background: rgb(156,156,156);
+    background: linear-gradient(0deg, rgba(156,156,156,1) 0%, rgba(148,148,148,1) 13%, rgba(127,127,127,1) 27%, rgba(108,108,108,1) 43%, rgba(100,100,100,1) 58%, rgba(92,91,91,1) 70%, rgba(84,84,84,1) 85%, rgba(60,60,60,1) 100%);
+
+}
+
+.iletisim_karti {
+    background-color: #a2a2a2;
+}
+
+.iletisim_search input[type=text] {
+    background-color: #545454;
+    border-radius: 15px;
+    border: 3px solid #a2a2a2;
+    height: 70px;
+    margin-top: 5%;
+    margin-right: 4%;
+    margin-left: 4%;
+    width: 92%;
+}
+.saat_div {
+    background-color: #a2a2a2;
+    border: 3px solid #a2a2a2; 
+    border-radius: 15px;
+    height: 150px;
+}
+.yazilarim_div {
+    background: rgb(156,156,156);
+    background: linear-gradient(0deg, rgba(156,156,156,1) 0%, rgba(148,148,148,1) 13%, rgba(127,127,127,1) 27%, rgba(108,108,108,1) 43%, rgba(100,100,100,1) 58%, rgba(92,91,91,1) 70%, rgba(84,84,84,1) 85%, rgba(60,60,60,1) 100%);
+    border: 3px solid #a2a2a2; 
+    border-radius: 15px;
+    margin-top: 4%;
+    height: 320px;
+}
+.ilgialanlari_div{
+    background: rgb(156,156,156);
+    background: linear-gradient(0deg, rgba(156,156,156,1) 0%, rgba(148,148,148,1) 13%, rgba(127,127,127,1) 27%, rgba(108,108,108,1) 43%, rgba(100,100,100,1) 58%, rgba(92,91,91,1) 70%, rgba(84,84,84,1) 85%, rgba(60,60,60,1) 100%);
+    width: 60%;
+    height: 90px;
+    border: 3px solid #a2a2a2; 
+    border-radius: 15px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.yayin_div_koyu {
+    background: #545454;
+    border: 3px solid #a2a2a2; 
+    border-radius: 15px;
+    margin-right: 4%;
+    color: #ffffff;
+    font-size: 11px;
+}
+.a_href {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.muzik_div {
+    background: rgb(156,156,156);
+    background: linear-gradient(0deg, rgba(156,156,156,1) 0%, rgba(148,148,148,1) 13%, rgba(127,127,127,1) 27%, rgba(108,108,108,1) 43%, rgba(100,100,100,1) 58%, rgba(92,91,91,1) 70%, rgba(84,84,84,1) 85%, rgba(60,60,60,1) 100%);
+    border: 3px solid #a2a2a2; 
+    border-radius: 15px;
+
+
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #545454;
+}
+.ikon_kutu{
+    background-color: #545454;
+    border: 3px solid #a2a2a2; 
+    border-radius: 15px;
+    width: 30%;
+    height: 74px;
+    display: flex; 
+    justify-content: center;
+}
+
+#player {
+    width: 92%;
+    margin-left: 4%;
+}​
+

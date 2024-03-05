@@ -4,36 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sedanur Kirci</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>  -->
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.149/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.149/examples/jsm/"
+            }
+        }
+    </script>
+
+
+    <link rel="stylesheet" href="/css/css.css" />
 
 </head>
 <body>
-    <div id="threejs-container"></div>
-    <script>
-        var scene = new THREE.Scene();
-        
-        // Set up camera
-        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.z = 5;
+    <div class="body_s">
+        <div class="canvas_div" id="canvas_div">
+            <div id="threejs-container">
+
+            </div>
+        </div>
+        <div class="isim_panosu">
+            seda
+        </div>
+    </div>
+    <!-- <div id="threejs-container"></div> -->
+    <script type="module">
+        import * as THREE from 'three';
+    	import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+        import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+        import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+        import { DRACOLoader } from 'three/addons/loaders/DRACOLoader.js';
 
         // Set up renderer
         var renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setSize(document.getElementById("canvas_div").clientWidth, document.getElementById("canvas_div").clientHeight); //renderer.setSize(window.innerWidth, window.innerHeight);
         document.getElementById('threejs-container').appendChild(renderer.domElement);
 
+        console.log("bir onceki dom elementin width'i: ", document.getElementById("canvas_div").clientWidth)
+
+        const pmremGenerator = new THREE.PMREMGenerator( renderer );
+        var scene = new THREE.Scene();
+        scene.background = new THREE.Color( 0xbfe3dd );
+        scene.environment = pmremGenerator.fromScene( new RoomEnvironment( renderer ), 0.04 ).texture;
+
+        // Set up camera
+        var camera = new THREE.PerspectiveCamera(75, document.getElementById("canvas_div").clientWidth / document.getElementById("canvas_div").clientHeight, 0.1, 1000);
+        camera.position.z = 5;
+
+       
+
         // Create a cube and add it to the scene
-        var geometry = new THREE.BoxGeometry();
-        var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-        var cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
+        // var geometry = new THREE.BoxGeometry();
+        // var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        // var cube = new THREE.Mesh(geometry, material);
+        // scene.add(cube);
+
+        // const loader = new THREE.GLTFLoader();
+        // loader.load('models/avakado.glb', function (gltf) {
+        //     scene.add(gltf.scene);
+        // });
+
+        const robot_loader = new GLTFLoader();
+        robot_loader.load('./models/ada.glb', function(gltf) { //pin_acik_kirmizi_koyu_kirmizi
+
+            const robot = gltf.scene;
+            robot.position.set(0, 1, 5);
+            // robot.rotation.set(0, 0, 0);
+            // scene.add(robot);
+            scene.add(robot);
+
+            
+        }, undefined, (error) => {
+            console.error(error);
+        });
+
+        const controls = new OrbitControls(camera, renderer.domElement)
 
         // Render loop
         var animate = function () {
             requestAnimationFrame(animate);
 
             // Rotate the cube
-            //cube.rotation.x += 0.01;
-           // cube.rotation.y += 0.01;
+            // cube.rotation.x += 0.01;
+            // cube.rotation.y += 0.01;
 
             // Render the scene
             renderer.render(scene, camera);

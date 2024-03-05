@@ -1,47 +1,24 @@
-html, body {
-    margin: 0;
-    height: 100%;
-    background-image: url('/images/bg2.jpg');
-    background-size:cover;
 
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Quicksand', sans-serif;
-}
-
-.navbar{
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.calisma_alani{
-    margin-left: 5%;
-    margin-right: 5%;
-    background-color: blue;
+.body_s{
     display: flex;
-    /*justify-content: space-between;*/
     flex-direction: row;
+    justify-content: space-around;
+    background-color: #bfe3dd;
+    height: 100vh;
+}
+
+.canvas_div {
+    background-color: blueviolet;
+    width: 40%;
+}
+
+.isim_panosu{
+    background-color: blueviolet;
+    width: 35%;
 
 }
 
-.kartvizit{
-    background-color: #a49e9b;
-    border: 3px solid #a2a2a2; 
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-   
-}
+@media only screen and (max-width: 479px) { 
+    /* telefon size */ 
 
-.publications {
-    background-color: #c4c2c0;
-    border: 3px solid #a2a2a2; 
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-}
-
-@media only screen and (max-width: 600px) {
-    .calisma_alani {
-        background-color: yellow;
-        flex-direction: column;
-    }
 }

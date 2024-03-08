@@ -1,21 +1,11 @@
-
-.body_s{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: #bfe3dd;
+.threejs-container{
+    width: 100vw;
     height: 100vh;
-}
-
-.canvas_div {
-    background-color: blueviolet;
-    width: 40%;
-}
-
-.isim_panosu{
-    background-color: blueviolet;
-    width: 35%;
-
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -9999;
 }
 
 @media only screen and (max-width: 479px) { 

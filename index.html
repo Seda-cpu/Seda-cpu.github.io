@@ -98,6 +98,7 @@
             </div>
         </div>
         <main>
+            <span id="scrollProgress"></span>
             <section class="home" id="home">
                 <div class="max-width">
                 <div class="home-content">
@@ -219,6 +220,13 @@
             //render()
         }
 
+        function lerp(x, y, a,){ //min, max, ratio
+            return (1-a)*x+a*y;
+        }
+
+        function scalePercent(start, end){
+            return (scrollPercent - start) / (end - start);
+        }
         const animationScripts = [] 
         animationScripts.push({
             start: 0,
@@ -241,6 +249,7 @@
                 camera.position.z = 1;
                 camera.position.x = 1;
                 camera.position.y = 1;
+                // model.position.z = lerp(-10,0, scalePercent(0,40));
             }
         })
 
@@ -248,7 +257,10 @@
             start: 40,
             end:60,
             func: () => {
-                camera.lookAt(model.position)
+                camera.position.z = 1;
+                camera.position.x = -1;
+                camera.position.y = -1;
+                
             }
         })
 
@@ -263,6 +275,7 @@
         let scrollPercent = 0
         document.body.onscroll = () => {
             scrollPercent = ((document.documentElement.scrollTop || document.body.scrollTop) / ((document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight)) * 100;
+            document.getElementById("scrollProgress").innerHTML = 'Scroll Progress : ' + scrollPercent.toFixed(2);
         }
 
         // Render loop

@@ -218,18 +218,68 @@
             renderer.setSize(window.innerWidth, window.innerHeight) //window.innerWidth, window.innerHeight
             //render()
         }
+
+        const animationScripts = [] 
+        animationScripts.push({
+            start: 0,
+            end: 101,
+            func: () => {
+                console.log("yesil rengi acti.")
+                // let g = material.color.g
+                // g -= 0.05
+                // if (g <= 0){
+                //     g=1.0
+                // }
+                // material.color.g = g
+            }
+        })
+
+        animationScripts.push({
+            start: 0,
+            end: 40,
+            func: () => {
+                camera.position.z = 1;
+                camera.position.x = 1;
+                camera.position.y = 1;
+            }
+        })
+
+        animationScripts.push({
+            start: 40,
+            end:60,
+            func: () => {
+                camera.lookAt(model.position)
+            }
+        })
+
+        function playScrollAnimations(){
+            animationScripts.forEach((a) => {
+                if (scrollPercent >= a.start && scrollPercent < a.end){
+                    a.func()
+                }
+            })
+        }
+
+        let scrollPercent = 0
+        document.body.onscroll = () => {
+            scrollPercent = ((document.documentElement.scrollTop || document.body.scrollTop) / ((document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight)) * 100;
+        }
+
         // Render loop
         var animate = function () {
             requestAnimationFrame(animate);
 
             // Rotate the cube
             model.rotation.x += 0.001;
-            // cube.rotation.y += 0.01;
+
+            //scrool animasyonlari
+            playScrollAnimations()
 
             // Render the scene
             renderer.render(scene, camera);
         };
 
+        window.scrollTo({ top:0, behavior: 'smooth'})
         animate();
     </script>
 </body>

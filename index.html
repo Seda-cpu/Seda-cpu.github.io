@@ -68,6 +68,14 @@
             z-index: 99;
             font-size: 3vh;
         }
+        .alt-div {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
 
     </style>
 
@@ -99,18 +107,25 @@
         </div>
         <main>
             <span id="scrollProgress"></span>
+            <br>
             <section class="home" id="home">
-                <div class="max-width">
-                <div class="home-content">
+                <div class="max-width" style="display: flex; flex-direction: column;">
+                <div class="home-content" >
                     <div class="text-1">Hello, This is</div>
                     <div class="text-2">Sedanur KIRCI</div>
                     <div class="text-3">And I'm <span class="typewriter"></span></div>
                     
+                    <div style="bottom: 0; position: fixed;">For more, scroll</div>
+                
                 </div>
+                
+                <!-- <br><br><br><br><br><br><br><br> -->
+
                 </div>
+
             </section>
-            <section>
-                <h2>Begin scrolling to see things change</h2>
+            <section class="">
+                <div class="text-1">I build robots</div>
             </section>
             <section>
                 <h2>Changing Objects Position</h2>
@@ -244,7 +259,7 @@
 
         animationScripts.push({
             start: 0,
-            end: 40,
+            end: 20,
             func: () => {
                 camera.position.z = 1;
                 camera.position.x = 1;
@@ -254,8 +269,8 @@
         })
 
         animationScripts.push({
-            start: 40,
-            end:60,
+            start: 20,
+            end:40,
             func: () => {
                 camera.position.z = 1;
                 camera.position.x = -1;

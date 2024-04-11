@@ -157,11 +157,55 @@ section {
 }
 
 
+.about_section_main_div{
+    background-color:rgba(13,57,18,0.65); 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    width: 90%;
+    border-radius: 0.5rem; 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    color: white;
+    
+}
 
+.experience_section_main_div{
+    background-color:rgba(33,70,129,0.65); 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    width: 90%;
+    border-radius: 0.5rem; 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    color: white;
+}
 
+.experience{
+    display: flex;
+}
+.experience_when{
+    flex: 1;
+}
+.experience_explanation{
+    flex: 3; 
+    display: flex; 
+    flex-direction: column;
+}
+.experience_title{
+    display: flex;
+}
+.experience_company{
+    display: flex;
+    text-align: left;
+}
 
-
-
+.education_section_main_div{
+    background-color:rgba(87,14,14,0.65); 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    width: 90%;
+    border-radius: 0.5rem; 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    color: white;
+}
 
 
 @media only screen and (max-width: 479px) { 

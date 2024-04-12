@@ -359,12 +359,12 @@
         camera.position.x = 1;
         camera.position.y = 1;
    
-        function herDakikaBir() {
+        /*function herDakikaBir() {
             console.log("camera pos: ", camera.position);
         }
         setInterval(herDakikaBir, 500);
 
-        console.log("camera pos: ", camera.position);
+        console.log("camera pos: ", camera.position);*/
        
 
         // Create a cube and add it to the scene
@@ -426,7 +426,7 @@
             start: 0,
             end: 101,
             func: () => {
-                console.log("yesil rengi acti.")
+                //console.log("yesil rengi acti.")
                 // let g = material.color.g
                 // g -= 0.05
                 // if (g <= 0){
@@ -437,15 +437,15 @@
         })
 
         animationScripts.push({
-            start: 0,
+            start: 2,
             end: 20,
             func: () => {
-                camera.position.z = 1;
+                /*camera.position.z = 1;
                 camera.position.x = 1;
-                camera.position.y = 1;
-                /*
-                camera.position.x= lerp(-1,1, scalePercent(20,40));
-                camera.position.y = lerp(-1,1, scalePercent(20,40));*/
+                camera.position.y = 1;*/
+                camera.position.x= lerp(1,-1,scalePercent(2,20));
+                camera.position.y = lerp(1,-1,scalePercent(2,20));
+                camera.position.z = lerp(1,1.5, scalePercent(2,20));
             }
         })
 
@@ -453,14 +453,12 @@
             start: 20,
             end:40,
             func: () => {
-                camera.position.z = 1;
+               /* camera.position.z = 1;
                 camera.position.x = -1;
-                camera.position.y = -1;
-                /*camera.position.x= lerp(-1,1, scalePercent(20,40));
-                camera.position.y = lerp(-1,1, scalePercent(20,40));
-                camera.position.z = lerp(1,2, scalePercent(20,40));
+                camera.position.y = -1;*/
+                
 
-               */
+               
 
                 
             }

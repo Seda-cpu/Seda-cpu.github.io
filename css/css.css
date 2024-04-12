@@ -221,7 +221,24 @@ section {
     display: flex;
     flex-direction: row;
 }
-
+.publications_section_main_div{
+    background-color:rgba(13,57,18,0.65); 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    width: 90%;
+    border-radius: 0.5rem; 
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.publication_content{
+    padding-bottom: 15px; 
+    font-size: x-large; 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    width: 90%; 
+    display: flex;
+    flex-direction: column;
+}
 .projects_section_main_div{
     background-color:rgba(41,46,52,0.65); 
     margin-right: 5%; 
@@ -325,6 +342,13 @@ section {
 }
 .web_typewriter{
     display: block;
+}
+
+.web_header_content{
+    display: block;
+}
+.mobile_header_content{
+    display: none;
 }
 @media only screen and (max-width: 479px) { 
     /* telefon size */ 
@@ -460,5 +484,11 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+    .web_header_content{
+        display: none;
+    }
+    .mobile_header_content{
+        display: block;
     }
 }

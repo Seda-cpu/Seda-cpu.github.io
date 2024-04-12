@@ -181,6 +181,7 @@ section {
 
 .experience{
     display: flex;
+    justify-content: row;
 }
 .experience_when{
     flex: 1;
@@ -211,6 +212,16 @@ section {
     pointer-events: none;
 }
 
+.education_content{
+    padding-bottom: 15px; 
+    font-size: x-large; 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    width: 90%; 
+    display: flex;
+    flex-direction: row;
+}
+
 .projects_section_main_div{
     background-color:rgba(41,46,52,0.65); 
     margin-right: 5%; 
@@ -221,9 +232,16 @@ section {
     color: white;
 }
 
+.projects_content{
+    display: flex; 
+    flex-direction: row;
+}
+
 .projects_when{
     flex: 1;
     pointer-events: none;
+    text-align: center;
+
 }
 
 .projects_explanation{
@@ -259,6 +277,25 @@ section {
     height: 50px;
 }
 
+.ros_ikon{
+    /*width: 50px;*/
+    height: 45px;
+}
+
+.web_skills{
+    padding-bottom: 15px; 
+    font-size: x-large; 
+    margin-right: 5%;
+    margin-left: 5%; 
+    width: 90%; 
+    display: flex; 
+    justify-content: space-between;
+}
+
+.mobile_skills{
+    display: none;
+}
+
 .contact_section_main_div{
     background-color:rgba(13,57,18,0.65); 
     margin-right: 5%; 
@@ -269,7 +306,159 @@ section {
     color: white;
 }
 
+.contact_content{
+    padding-bottom: 15px; 
+    font-size: x-large; 
+    margin-right: 5%; 
+    margin-left: 5%; 
+    width: 90%; 
+    display: flex;
+    flex-direction: row;
+}
+
+.header_ikon{
+    display: block;
+}
+
+.mobile_typewriter{
+    display: none;
+}
+.web_typewriter{
+    display: block;
+}
 @media only screen and (max-width: 479px) { 
     /* telefon size */ 
+    .header_ikon{
+        display: none;
+    }
 
+    .mobile_typewriter{
+        display: block;
+    }
+
+    .web_typewriter{
+        display: none;
+    }
+    
+    section {
+        padding: 0px;
+    }
+
+    .max-width {
+        /*max-width: 1300px;*/
+        padding: 0px;
+        margin-left: 1%;
+        margin-right: 10%;
+        width: 89%;
+
+    }
+    
+    .home .home-content {
+        text-align: right;
+    }
+    
+    .home .home-content .text-1 {
+        font-size: 45px;
+    }
+    
+    .home .home-content .text-2 {
+        font-size: 90px;
+        font-weight: 600;
+        margin-left: -3px;
+        color: #408eff;
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 55px;
+        margin: 5px 0;
+    }
+    
+    .home .home-content .text-3 span {
+        color: #1e3551;
+        background: linear-gradient(135deg, #285dac, #357ae4, #4ca3ff);
+        /*background-color: #1e3551; */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 500;
+    }
+
+    .experience{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .experience_when{
+        flex: 1;
+        pointer-events: none;
+        font-size: medium;
+    }
+
+    .education_content{
+        padding-bottom: 15px; 
+        font-size: x-large; 
+        margin-right: 5%; 
+        margin-left: 5%; 
+        width: 90%; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects_content{
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .projects_when{
+        flex: 1;
+        pointer-events: none;
+        text-align: left;
+        font-size: medium;
+    }
+
+    .web_skills{
+        display: none;
+    }
+
+    .mobile_skills{
+        padding-bottom: 15px; 
+        font-size: x-large; 
+        margin-right: 5%;
+        margin-left: 5%; 
+        width: 90%; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .mobile_skills_div{
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        margin-bottom: 15px;
+    }
+    .ikons{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .ros_ikon{
+        /*width: 50px;*/
+        height: 50px;
+    }
+    .contact_content{
+        padding-bottom: 15px; 
+        font-size: x-large; 
+        margin-right: 5%; 
+        margin-left: 5%; 
+        width: 90%; 
+        display: flex;
+        flex-direction: column;
+    }
+    .contact_elements{
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }

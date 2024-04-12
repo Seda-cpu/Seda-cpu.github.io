@@ -87,13 +87,13 @@
         <div id="navbar" >
             <div class="container">
                 <header class="d-flex flex-wrap py-3 mb-4 border-bottom" style="display: flex; justify-content: space-between;">
-                    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <div class="header_ikon">
+                    <a href="/" class=" d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                         <!--<svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>-->
                         <img class="bi me-2" src="/images/agv-robot.png" alt="Aciklama metni" width="46" height="38">
                         <span class="fs-4"> </span>
-
                     </a>
-            
+                    </div>
                   <ul class="nav nav-pills">
                     <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
                     <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
@@ -109,23 +109,24 @@
         <main>
 
             <span id="scrollProgress"></span>
-            <br>
+           
             <section class="home" id="home">
                 <div class="max-width" style="display: flex; flex-direction: column;">
-                <div class="home-content" >
-                    <div class="text-1">Hello, This is</div>
-                    <div class="text-2">Sedanur KIRCI</div>
-                    <div class="text-3">And I'm <span class="typewriter"></span></div>
-                    
-                    <div style="bottom: 0; position: sticky; font-size:medium;">For more, scroll ..</div>
-                
+                    <div class="home-content" >
+                        <div class="text-1">Hello, This is</div>
+                        <div class="text-2">Sedanur KIRCI</div>
+                        <div class="mobile_typewriter">
+                            <div class="text-3">And I'm </div>
+                            <div class="text-3"><span class="typewriter"></span></div>
+                        </div>
+                        <div class="web_typewriter">
+                            <div class="text-3">And I'm <span class="typewriter"></span></div>
+                        </div>
+                        <div style="bottom: 0; position: sticky; font-size:medium;">For more, scroll ..</div>
+                    </div>
                 </div>
-                
-                <!-- <br><br><br><br><br><br><br><br> -->
-
-                </div>
-
             </section>
+
             <section style="padding: 20px;" id="about">
                 <div class="about_section_main_div">
                     <div class="" style="border-radius: 0.5rem; padding-top: 20px; display: flex; margin-left: 5%; font-size: x-large;">About me</div>
@@ -142,7 +143,7 @@
                     <hr style="margin-right: 5%; margin-left: 5%; width: 90%; background-color: white;">
                     <div style="padding-bottom: 15px; font-size: x-large; margin-right: 5%; margin-left: 5%; width: 90%">
                         <div class="experience">
-                            <div class="experience_when" style="pointer-events: none;">Feb 2022 - present</div>
+                            <div class="experience_when" >Feb 2022 - present</div>
                             <div class="experience_explanation">
                                 <div class="experience_title">
                                     Mechatronics Engineer
@@ -212,12 +213,13 @@
                 <div class="education_section_main_div">
                     <div class="" style="border-radius: 0.5rem; padding-top: 20px; display: flex; margin-left: 5%; font-size: x-large; ">Education</div>
                     <hr style="margin-right: 5%; margin-left: 5%; width: 90%; background-color: white;">
-                    <div style="padding-bottom: 15px; font-size: x-large; margin-right: 5%; margin-left: 5%; width: 90%; display: flex;">
+                    <div class="education_content">
                         <div style="flex:1; text-align: left;">
                             <div><li>MD-PhD. Student, Mechatronics, Robotics, and Automation Engineering </li></div>
                             <div>Sakarya University of Applied Sciences</div>
                             <div>2023 - present</div>
                         </div>
+                        <br>
                         <div style="flex: 1; text-align: left;">
                             <div><li>Bachelor's Degree, Mechatronics, Robotics, and Automation Engineering</li></div>
                             <div>Sakarya University of Applied Sciences, 3.13</div>
@@ -234,7 +236,7 @@
                     <div class="" style="border-radius: 0.5rem; padding-top: 20px; display: flex; margin-left: 5%; font-size: x-large; pointer-events: none;">Projects</div>
                     <hr style="margin-right: 5%; margin-left: 5%; width: 90%; background-color: white;">
                     <div style="padding-bottom: 15px; font-size: x-large; margin-right: 5%; margin-left: 5%; width: 90%; display: flex; flex-direction: column;">
-                        <div style=" display: flex; flex-direction: row;">
+                        <div class="projects_content">
                             <div class="projects_when">2022 - present </div>
                             <div class="projects_explanation">
                                 <div class="project_name"><a href="https://www.karmetal.com.tr/products/16/mobil-otonom-robotlar.html" target="_blank" style="color: #f0f0f0;">SERVANT</a></div>
@@ -247,7 +249,7 @@
                             </div>
                         </div>
                         <br>
-                        <div style="display: flex; flex-direction: row;">
+                        <div class="projects_content">
                             <div class="projects_when"> 2021 - 2022 </div>
                             <div class="projects_explanation">
                                 <div class="project_name"><a href="https://github.com/Seda-cpu/3WD_OMNI_ROBOT" target="_blank" style="color: #f0f0f0;">Nexus OmniBot</a></div>
@@ -260,7 +262,7 @@
                             </div>
                         </div>
                         <br>
-                        <div style="display: flex; flex-direction: row;">
+                        <div class="projects_content">
                             <div class="projects_when"> 2020 </div>
                             <div class="projects_explanation">
                                 <div class="project_name"><a href="https://rotasam.subu.edu.tr/tr/fersah" target="_blank" style="color: #f0f0f0;">Fersah</a></div>
@@ -280,15 +282,28 @@
                     <div class="" style="border-radius: 0.5rem; padding-top: 20px; display: flex; margin-left: 5%; font-size: x-large;">Relevant Skills</div>
                     <hr style="margin-right: 5%; margin-left: 5%; width: 90%; background-color: white;">
 
-                    <div style="padding-bottom: 15px; font-size: x-large; margin-right: 5%; margin-left: 5%; width: 90%; display: flex; justify-content: space-between;">
+                    <div class="web_skills" >
                       <div class="javascript"><img src="/images/js-file.png" alt="Javascript" class="ikons" ></div>
                       <div><img src="/images/python.png" alt="python" class="ikons"></div>
-                      <div><img src="/images/Ros_logo.png" alt="ros" class="ikons"></div>
+                      <div><img src="/images/Ros_logo.png" alt="ros" class="ros_ikon"></div>
                       <div><img src="/images/c-.png" alt="c++" class="ikons"></div>
                       <div><img src="/images/typescript.png" alt="typescript" class="ikons"></div>
                       <div><img src="/images/ubuntu.png" alt="ubuntu" class="ikons"></div>
                       <div><img src="/images/social.png" alt="git" class="ikons"></div>
                     </div>
+                    <div class="mobile_skills" >
+                        <div class="mobile_skills_div">
+                            <div class="javascript"><img src="/images/js-file.png" alt="Javascript" class="ikons" ></div>
+                            <div><img src="/images/python.png" alt="python" class="ikons"></div>
+                            <div><img src="/images/Ros_logo.png" alt="ros" class="ros_ikon"></div>
+                        </div>
+                        <div class="mobile_skills_div">
+                            <div><img src="/images/c-.png" alt="c++" class="ikons"></div>
+                            <div><img src="/images/typescript.png" alt="typescript" class="ikons"></div>
+                            <div><img src="/images/ubuntu.png" alt="ubuntu" class="ikons"></div>
+                            <div><img src="/images/social.png" alt="git" class="ikons"></div>
+                        </div>
+                      </div>
                 </div>
             </section>
 
@@ -296,30 +311,30 @@
                 <div class="contact_section_main_div">
                     <div class="" style="border-radius: 0.5rem; padding-top: 20px; display: flex; margin-left: 5%; font-size: x-large; pointer-events: none;">Get in Touch</div>
                     <hr style="margin-right: 5%; margin-left: 5%; width: 90%; background-color: white;">
-                    <div style="padding-bottom: 15px; font-size: x-large; margin-right: 5%; margin-left: 5%; width: 90%; display: flex;">
+                    <div class="contact_content" >
                         <div style="flex: 1; text-align: left;">
                             <div><img src="/images/avatar_ikon.png" alt="avatar_icon" style="margin-left: 20%; margin-right: 20%; width: 60%;"></div>
                         </div>
                         <div style="flex: 2; text-align: left;">
                             <div style="display: flex; padding-bottom: 10px;">
                                 <div style="padding-right: 15px;"><img src="/images/gmail.png" alt="gmail" width="30px" height="30px"></div>
-                                <div><a href="mailto:kircisedanur2@gmail.com" target="_blank" style="color: #f0f0f0;">kircisedanur2@gmail.com</a></div>
+                                <div class="contact_elements"><a href="mailto:kircisedanur2@gmail.com" target="_blank" style="color: #f0f0f0;">kircisedanur2@gmail.com</a></div>
                             </div>
                             <div style="display: flex; padding-bottom: 10px;">
                                 <div style="padding-right: 15px;"><img src="/images/linkedin.png" alt="linkedin" width="30px" height="30px"></div>
-                                <div><a href="https://www.linkedin.com/in/sedanurkirci/" target="_blank" style="color: #f0f0f0;">linkedin.com/in/sedanurkirci/</a></div>
+                                <div class="contact_elements"><a href="https://www.linkedin.com/in/sedanurkirci/" target="_blank" style="color: #f0f0f0;">linkedin.com/in/sedanurkirci/</a></div>
                             </div>
                             <div style="display: flex; padding-bottom: 10px;">
                                 <div style="padding-right: 15px;"><img src="/images/medium.png" alt="medium" width="30px" height="30px"></div>
-                                <div><a href="https://medium.com/@kircisedanur2" target="_blank" style="color: #f0f0f0;">medium.com/@kircisedanur2/</a></div>
+                                <div class="contact_elements"><a href="https://medium.com/@kircisedanur2" target="_blank" style="color: #f0f0f0;">medium.com/@kircisedanur2/</a></div>
                             </div>
                             <div style="display: flex; padding-bottom: 10px;">
                                 <div style="padding-right: 15px;"><img src="/images/github.png" alt="github" width="30px" height="30px"></div>
-                                <div><a href="https://github.com/Seda-cpu" target="_blank" style="color: #f0f0f0;">github.com/Seda-cpu</a></div>
+                                <div class="contact_elements"><a href="https://github.com/Seda-cpu" target="_blank" style="color: #f0f0f0;">github.com/Seda-cpu</a></div>
                             </div>
                             <div style="display: flex; padding-bottom: 10px;">
                                 <div style="padding-right: 15px;"><img src="/images/youtube.png" alt="youtube" width="30px" height="30px"></div>
-                                <div><a href="https://www.youtube.com/@SedanurKrc" target="_blank" style="color: #f0f0f0;">youtube.com/@SedanurKrc</a></div>
+                                <div class="contact_elements"><a href="https://www.youtube.com/@SedanurKrc" target="_blank" style="color: #f0f0f0;">youtube.com/@SedanurKrc</a></div>
                             </div>
 
                         </div>
@@ -475,7 +490,7 @@
         let scrollPercent = 0
         document.body.onscroll = () => {
             scrollPercent = ((document.documentElement.scrollTop || document.body.scrollTop) / ((document.documentElement.scrollHeight || document.body.scrollHeight) - document.documentElement.clientHeight)) * 100;
-            document.getElementById("scrollProgress").innerHTML = 'Scroll Progress : ' + scrollPercent.toFixed(2);
+            //document.getElementById("scrollProgress").innerHTML = 'Scroll Progress : ' + scrollPercent.toFixed(2);
         }
 
         // Render loop

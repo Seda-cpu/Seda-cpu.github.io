@@ -472,6 +472,21 @@
             console.error(error);
         });
 
+        let model2;
+        const model2_loader = new GLTFLoader();
+        model2_loader.load('./models/model2.glb', function(gltf) {
+            model2 = gltf.scene;
+            model2.position.set(-2.5,-1.7,0);
+            model2.scale.set(2.2,2.2,2.2);
+            scene.add(model2);
+
+        }, undefined, (error) => {
+            console.error(error);
+        });
+
+
+
+
         //const controls = new OrbitControls(camera, renderer.domElement)
 
         window.addEventListener('resize', onWindowResize, false);
@@ -552,6 +567,7 @@
 
             // Rotate the cube
             model.rotation.x += 0.001;
+            model2.rotation.y +=0.001;
 
             //scrool animasyonlari
             playScrollAnimations()

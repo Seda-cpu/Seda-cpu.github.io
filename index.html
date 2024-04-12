@@ -51,13 +51,12 @@
             position: absolute;
             justify-content: center;
             text-align: center;
-            pointer-events: none;
+            /*pointer-events: none;*/
             font-size: 5vh;
         }
 
         section {
             min-height: 100vh;
-            
             font-size: 4vh;
         }
 
@@ -85,7 +84,7 @@
     <div id="threejs-container" class="threejs-container"></div>
         <div>
         <!-- NAVBAR -->
-        <div>
+        <div id="navbar" >
             <div class="container">
                 <header class="d-flex flex-wrap py-3 mb-4 border-bottom" style="display: flex; justify-content: space-between;">
                     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -97,16 +96,18 @@
             
                   <ul class="nav nav-pills">
                     <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Experience</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Education</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
                   </ul>
                 </header>
             </div>
+
         </div>
         <main>
+
             <span id="scrollProgress"></span>
             <br>
             <section class="home" id="home">
@@ -125,53 +126,51 @@
                 </div>
 
             </section>
-            <section style="padding: 20px;">
+            <section style="padding: 20px;" id="about">
                 <div class="about_section_main_div">
                     <div class="" style="border-radius: 0.5rem; padding-top: 20px; display: flex; margin-left: 5%; font-size: x-large;">About me</div>
                     <hr style="margin-right: 5%; margin-left: 5%; width: 90%; background-color: white;">
                     <div style="padding-bottom: 15px; font-size: x-large; margin-right: 5%; margin-left: 5%; width: 90%">
                         As a robotics engineer, my journey in robotics has equipped me with a strong foundation in robotics, AI, and image processing. I have actively engaged in designing and implementing various robotic systems, from industrial mobile robots to autonomous underwater vehicles. 
                     </div>
-                    
-                    
                 </div>
                 
             </section>
-            <section style="padding: 20px;">
+            <section style="padding: 20px;" id="experience">
                 <div class="experience_section_main_div">
                     <div class="" style="border-radius: 0.5rem; padding-top: 20px; display: flex; margin-left: 5%; font-size: x-large;">Experience</div>
                     <hr style="margin-right: 5%; margin-left: 5%; width: 90%; background-color: white;">
                     <div style="padding-bottom: 15px; font-size: x-large; margin-right: 5%; margin-left: 5%; width: 90%">
                         <div class="experience">
-                            <div class="experience_when">Feb 2022 - present</div>
+                            <div class="experience_when" style="pointer-events: none;">Feb 2022 - present</div>
                             <div class="experience_explanation">
                                 <div class="experience_title">
                                     Mechatronics Engineer
                                 </div>
                                 <div class="experience_company">
-                                    Kar Metal
+                                    <a href="https://www.karmetal.com.tr/products/16/mobil-otonom-robotlar.html" target="_blank" style="color: #f0f0f0;">Kar Metal</a>
                                 </div>
                                 <div style="font-size: medium; display: flex; flex-direction: column;"> 
-                                    <div style="text-align: left;"> <li>My focus has been dedicated to working with Autonomous Mobile Robots (AMR). I have worked on image processing and deep learning solutions for AMRs using the Robot Operating System (ROS). </li></div>
-                                    <div style="text-align: left;"> <li>I have developed  Fleet Management Interface, gaining exposure to both frontend and backend sides, along with database management.</li></div>
-                                    <div style="text-align: left;"> <li>Project manager, Tubitak 1501. </li></div>
-                                    <div style="text-align: left;"> <li>The article I wrote won the "2nd Prize for Best Artificial Intelligence Project Article" at the International Nightwatch RDCONF 2023 Conference.</li></div>
-
+                                    <div style="text-align: left;"> <li style="pointer-events: none;">My focus has been dedicated to working with Autonomous Mobile Robots (AMR). I have worked on image processing and deep learning solutions for AMRs using the Robot Operating System (ROS). </li></div>
+                                    <div style="text-align: left;"> <li style="pointer-events: none;">I have developed  Fleet Management Interface, gaining exposure to both frontend and backend sides, along with database management.</li></div>
+                                    <div style="text-align: left;"> <li style="pointer-events: none;">Project manager, Tubitak 1501. </li></div>
+                                    <div style="text-align: left;"> <a href="https://rdconf.com/veepsoox/2024/01/Data-Set-108.pdf" target="_blank" style="color: #f0f0f0;"><li>The article I wrote won the "2nd Prize for Best Artificial Intelligence Project Article" at the International Nightwatch RDCONF 2023 Conference.</li></a></div>
+                                    
                                 </div>
                             </div>
                         </div>
                         <br>
                         <div class="experience">
-                            <div class="experience_when">May 2022 - Sep 2022</div>
+                            <div class="experience_when" >May 2022 - Sep 2022</div>
                             <div class="experience_explanation">
-                                <div class="experience_title">
+                                <div class="experience_title" >
                                     Advanced Robotics Instructor
                                 </div>
-                                <div class="experience_company">
-                                    Deneyap Türkiye
+                                <div class="experience_company" >
+                                    <a href="https://www.deneyap.org/tr/" target="_blank" style="color: #f0f0f0;">Deneyap Türkiye</a>
                                 </div>
                                 <div style="font-size: medium; display: flex; flex-direction: column;"> 
-                                    <div style="text-align: left;"> <li>As an advanced robotics instructor for high school-level students at Deneyap workshops, I conducted coding and robotics sessions utilizing the Deneyap card. </li></div>
+                                    <div style="text-align: left;"> <a href="/pdf/deneyap.pdf" target="_blank" style="color: #f0f0f0;"><li>As an advanced robotics instructor for high school-level students at Deneyap workshops, I conducted coding and robotics sessions utilizing the Deneyap card. </li></a></div>
                                 </div>
                             </div>
                         </div>
@@ -183,10 +182,10 @@
                                     Research Student
                                 </div>
                                 <div class="experience_company">
-                                    Sakarya University of Applied Sciences Robot Technologies Research Center (ROTASAM)
+                                    <a href="https://rotasam.subu.edu.tr/tr/anasayfa" target="_blank" style="color: #f0f0f0;">Sakarya University of Applied Sciences Robot Technologies Research Center (ROTASAM)</a>
                                 </div>
                                 <div style="font-size: medium; display: flex; flex-direction: column;"> 
-                                    <div style="text-align: left;"> <li>As the Fersah team, we built an Autonomous Underwater Robot. I developed object detection system for the robot's autonomous tasks. </li></div>
+                                    <div style="text-align: left;"> <a href="https://rotasam.subu.edu.tr/tr/fersah" target="_blank" style="color: #f0f0f0;"><li>As the Fersah team, we built an Autonomous Underwater Robot. I developed object detection system for the robot's autonomous tasks. </li></a></div>
                                 </div>
                             </div>
                         </div>
@@ -198,23 +197,20 @@
                                     Research Student
                                 </div>
                                 <div class="experience_company">
-                                    Sakarya University of Applied Sciences Artificial Intelligence and Data Science Research Center (YAZEM)
+                                    <a href="https://yapayzeka.subu.edu.tr/tr/anasayfa" target="_blank" style="color: #f0f0f0;">Sakarya University of Applied Sciences Artificial Intelligence and Data Science Research Center (YAZEM)</a>
                                 </div>
-                                <div style="font-size: medium; display: flex; flex-direction: column;"> 
+                                <div style="font-size: medium; display: flex; flex-direction: column; pointer-events: none;"> 
                                     <div style="text-align: left;"> <li>I was short-term intern at the research center. </li></div>
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
-                
                 </div>
             </section>
 
-            <section style="padding: 20px;">
+            <section style="padding: 20px;" id="education">
                 <div class="education_section_main_div">
-                    <div class="" style="border-radius: 0.5rem; padding-top: 20px; display: flex; margin-left: 5%; font-size: x-large;">Education</div>
+                    <div class="" style="border-radius: 0.5rem; padding-top: 20px; display: flex; margin-left: 5%; font-size: x-large; ">Education</div>
                     <hr style="margin-right: 5%; margin-left: 5%; width: 90%; background-color: white;">
                     <div style="padding-bottom: 15px; font-size: x-large; margin-right: 5%; margin-left: 5%; width: 90%; display: flex;">
                         <div style="flex:1; text-align: left;">
@@ -233,17 +229,104 @@
                 </div>
             </section>
 
-            <section style="padding: 20px;">
-                <h2>Projects</h2>
-                <p>The camera position is now changing</p>
+            <section style="padding: 20px;" id="projects">
+                <div class="projects_section_main_div">
+                    <div class="" style="border-radius: 0.5rem; padding-top: 20px; display: flex; margin-left: 5%; font-size: x-large; pointer-events: none;">Projects</div>
+                    <hr style="margin-right: 5%; margin-left: 5%; width: 90%; background-color: white;">
+                    <div style="padding-bottom: 15px; font-size: x-large; margin-right: 5%; margin-left: 5%; width: 90%; display: flex; flex-direction: column;">
+                        <div style=" display: flex; flex-direction: row;">
+                            <div class="projects_when">2022 - present </div>
+                            <div class="projects_explanation">
+                                <div class="project_name"><a href="https://www.karmetal.com.tr/products/16/mobil-otonom-robotlar.html" target="_blank" style="color: #f0f0f0;">SERVANT</a></div>
+                                <div class="project_subtitle">Industrial Autonomous Mobile Robot (AMR) Project in Kar Metal.</div>
+                                <div class="projects_explanation_list">
+                                    <li style="pointer-events: none;">AI based EuroPallet Detection System </li>
+                                    <li style="pointer-events: none;">WEB-based Fleet Manager User Interface </li>
+                                    <a href="https://www.karmetal.com.tr/products/16/mobil-otonom-robotlar.html" target="_blank" style="color: #f0f0f0;">click for more..</a>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div style="display: flex; flex-direction: row;">
+                            <div class="projects_when"> 2021 - 2022 </div>
+                            <div class="projects_explanation">
+                                <div class="project_name"><a href="https://github.com/Seda-cpu/3WD_OMNI_ROBOT" target="_blank" style="color: #f0f0f0;">Nexus OmniBot</a></div>
+                                <div class="project_subtitle">3 Wheel Autonomous Mobile Robot Project in Sakarya University of Applied Sciences.</div>
+                                <div class="projects_explanation_list">
+                                    <li style="pointer-events: none;">Natural Navigation ROS robot, my graduation project.</li>
+                                    <li style="pointer-events: none;">WEB-based Robot Control User Interface </li>
+                                    <a href="https://github.com/Seda-cpu/3WD_OMNI_ROBOT" target="_blank" style="color: #f0f0f0;">click for more..</a>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div style="display: flex; flex-direction: row;">
+                            <div class="projects_when"> 2020 </div>
+                            <div class="projects_explanation">
+                                <div class="project_name"><a href="https://rotasam.subu.edu.tr/tr/fersah" target="_blank" style="color: #f0f0f0;">Fersah</a></div>
+                                <div class="project_subtitle">Autonomous Underwater Vehicle (AUV) Project in Sakarya University of Applied Sciences.</div>
+                                <div class="projects_explanation_list">
+                                    <li style="pointer-events: none;"> Underwater robot, Teknofest20 project.</li>
+                                    <li style="pointer-events: none;"> Underwater object detection system. </li>
+                                    <a href="https://rotasam.subu.edu.tr/tr/fersah" target="_blank" style="color: #f0f0f0;">click for more..</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <div class="skills_section_main_div">
+                    <div class="" style="border-radius: 0.5rem; padding-top: 20px; display: flex; margin-left: 5%; font-size: x-large;">Relevant Skills</div>
+                    <hr style="margin-right: 5%; margin-left: 5%; width: 90%; background-color: white;">
+
+                    <div style="padding-bottom: 15px; font-size: x-large; margin-right: 5%; margin-left: 5%; width: 90%; display: flex; justify-content: space-between;">
+                      <div class="javascript"><img src="/images/js-file.png" alt="Javascript" class="ikons" ></div>
+                      <div><img src="/images/python.png" alt="python" class="ikons"></div>
+                      <div><img src="/images/Ros_logo.png" alt="ros" class="ikons"></div>
+                      <div><img src="/images/c-.png" alt="c++" class="ikons"></div>
+                      <div><img src="/images/typescript.png" alt="typescript" class="ikons"></div>
+                      <div><img src="/images/ubuntu.png" alt="ubuntu" class="ikons"></div>
+                      <div><img src="/images/social.png" alt="git" class="ikons"></div>
+                    </div>
+                </div>
             </section>
 
-            <section style="padding: 20px;">
-                <h2>Contact</h2>
-                <p>The cube will now be auto rotating</p>
-                <p>
-                    Now you can scroll back to the top to reverse the animation
-                </p>
+            <section style="padding: 20px;" id="contact">
+                <div class="contact_section_main_div">
+                    <div class="" style="border-radius: 0.5rem; padding-top: 20px; display: flex; margin-left: 5%; font-size: x-large; pointer-events: none;">Get in Touch</div>
+                    <hr style="margin-right: 5%; margin-left: 5%; width: 90%; background-color: white;">
+                    <div style="padding-bottom: 15px; font-size: x-large; margin-right: 5%; margin-left: 5%; width: 90%; display: flex;">
+                        <div style="flex: 1; text-align: left;">
+                            <div><img src="/images/avatar_ikon.png" alt="avatar_icon" style="margin-left: 20%; margin-right: 20%; width: 60%;"></div>
+                        </div>
+                        <div style="flex: 2; text-align: left;">
+                            <div style="display: flex; padding-bottom: 10px;">
+                                <div style="padding-right: 15px;"><img src="/images/gmail.png" alt="gmail" width="30px" height="30px"></div>
+                                <div><a href="mailto:kircisedanur2@gmail.com" target="_blank" style="color: #f0f0f0;">kircisedanur2@gmail.com</a></div>
+                            </div>
+                            <div style="display: flex; padding-bottom: 10px;">
+                                <div style="padding-right: 15px;"><img src="/images/linkedin.png" alt="linkedin" width="30px" height="30px"></div>
+                                <div><a href="https://www.linkedin.com/in/sedanurkirci/" target="_blank" style="color: #f0f0f0;">linkedin.com/in/sedanurkirci/</a></div>
+                            </div>
+                            <div style="display: flex; padding-bottom: 10px;">
+                                <div style="padding-right: 15px;"><img src="/images/medium.png" alt="medium" width="30px" height="30px"></div>
+                                <div><a href="https://medium.com/@kircisedanur2" target="_blank" style="color: #f0f0f0;">medium.com/@kircisedanur2/</a></div>
+                            </div>
+                            <div style="display: flex; padding-bottom: 10px;">
+                                <div style="padding-right: 15px;"><img src="/images/github.png" alt="github" width="30px" height="30px"></div>
+                                <div><a href="https://github.com/Seda-cpu" target="_blank" style="color: #f0f0f0;">github.com/Seda-cpu</a></div>
+                            </div>
+                            <div style="display: flex; padding-bottom: 10px;">
+                                <div style="padding-right: 15px;"><img src="/images/youtube.png" alt="youtube" width="30px" height="30px"></div>
+                                <div><a href="https://www.youtube.com/@SedanurKrc" target="_blank" style="color: #f0f0f0;">youtube.com/@SedanurKrc</a></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    
+                </div>
             </section>
         </main>
     </div>

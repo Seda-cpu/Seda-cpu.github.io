@@ -350,6 +350,23 @@ section {
 .mobile_header_content{
     display: none;
 }
+
+.loading_page{
+    background-color: rgba(191,227,221,1);
+    font-family: "Truculenta", sans-serif;
+    font-optical-sizing: auto;
+    font-variation-settings:
+    "width" 112.5;
+
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px;
+    width: 100vw;
+    height: 200vh;
+    justify-content: center;
+
+}
 @media only screen and (max-width: 479px) { 
     /* telefon size */ 
     .header_ikon{

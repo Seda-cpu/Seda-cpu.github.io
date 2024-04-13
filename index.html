@@ -80,9 +80,13 @@
 
 </head>
 <body>
+    <div class="loading_page" id="loading_page">
+        <div style="margin-right: auto; margin-left: auto; margin-top: 20%;" >loading.. </div>
+        <span id="loading_yuzde"></span>
+    </div>
     
     <div id="threejs-container" class="threejs-container"></div>
-        <div>
+        <div id="navbar_main">
         <!-- NAVBAR -->
         <div id="navbar" >
             <div class="container">
@@ -450,14 +454,53 @@
 
 
 
+        var manager = new THREE.LoadingManager();
+        manager.onStart = function (item, loaded, total) {
+            console.log('Loading started');
+            document.getElementById("loading_page").style.display="flex";
 
+            document.getElementById("threejs-container").style.display="none";
+            document.getElementById("navbar_main").style.display="none";
+
+            //document.getElementById("loading_yuzde").innerHTML = Math.round(loaded / total * 100, 2) + '%'; 
+            //console.log("loading yuzde: ", document.getElementById("loading_yuzde"));
+
+        };
+        manager.onLoad = function () {
+            console.log('Loading complete');            
+            //bar.destroy();
+
+            document.getElementById("threejs-container").style.display="block";
+            document.getElementById("navbar_main").style.display="block";
+
+            document.getElementById("loading_page").style.display="none";
+
+        };
+
+        manager.onProgress = function (item, loaded, total) {            
+            console.log(item, loaded, total);
+            console.log('Loaded:', Math.round(loaded / total * 100, 2) + '%')
+            //bar.animate(1.0);
+            
+            document.getElementById("loading_page").style.display="flex";
+
+            document.getElementById("threejs-container").style.display="none";
+            document.getElementById("navbar_main").style.display="none";
+
+            //document.getElementById("loading_yuzde").innerHTML = Math.round(loaded / total * 100, 2) + '%'; 
+            //console.log("loading yuzde: ", document.getElementById("loading_yuzde"));
+        };
+
+        manager.onError = function (url) {
+            console.log('Error loading');
+        };
 
 
 
 //----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         let model;
-        const robot_loader = new GLTFLoader();
+        const robot_loader = new GLTFLoader(manager);
         robot_loader.load('./models/planet2.glb', function(gltf) { //pin_acik_kirmizi_koyu_kirmizi
 
             model = gltf.scene;
@@ -472,7 +515,7 @@
             console.error(error);
         });
 
-        /*let model2;
+       /* let model2;
         const model2_loader = new GLTFLoader();
         model2_loader.load('./models/model2.glb', function(gltf) {
             model2 = gltf.scene;
@@ -567,7 +610,7 @@
 
             // Rotate the cube
             model.rotation.x += 0.001;
-            model2.rotation.y +=0.001;
+            //model2.rotation.y +=0.001;
 
             //scrool animasyonlari
             playScrollAnimations()

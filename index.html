@@ -420,12 +420,12 @@
 
         const pmremGenerator = new THREE.PMREMGenerator( renderer );
         var scene = new THREE.Scene();
-        // scene.background = new THREE.Color( 0x001F3F ); //bfe3dd
+        scene.background = new THREE.Color( 0xffffff ); //bfe3dd
         // TextureLoader kullanarak resmi yükleyin
-        const loader_bg = new THREE.TextureLoader();
-        loader_bg.load('images/dalle3.webp', function(texture) {
-            scene.background = texture; // Resmi arkaplan olarak ayarlayın
-        });
+        //const loader_bg = new THREE.TextureLoader();
+        //loader_bg.load('images/dalle3.webp', function(texture) {
+        //    scene.background = texture; // Resmi arkaplan olarak ayarlayın
+        //});
 
         scene.environment = pmremGenerator.fromScene( new RoomEnvironment( renderer ), 0.04 ).texture;
 

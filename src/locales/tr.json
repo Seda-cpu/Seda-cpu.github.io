@@ -39,7 +39,10 @@
     "omnibotDescription": "Lisans bitirme projem kapsamında, 3 tekerlekli holonomik sürüş kabiliyetine sahip bir mobil robot geliştirdim. Bu robot, ROS tabanlı otonom hareket ve haritalama yapabilme yetenekleriyle donatıldı.",
     "formore":"incele",
     "contactme":"Benimle iletişime geçin",
-    "highlights":"Kariyer Öne Çıkanlar"
+    "highlights":"Kariyer Öne Çıkanlar",
+    "skills":"Yetenekler",
+    "daysAtKarmetal":"Karmetal Günlükleri (arşiv)",
+    "kitaplarim":"Kitap Listem"
 
 
 

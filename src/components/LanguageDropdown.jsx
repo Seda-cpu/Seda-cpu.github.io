@@ -38,7 +38,7 @@ function LanguageDropdown({ className = ""  }) {
             >
                 {LANGS.map((l) => (
                 <option key={l.code} value={l.code}>
-                    {l.flag} {l.label}
+                    {l.flag} 
                 </option>
                 ))}
             </select>

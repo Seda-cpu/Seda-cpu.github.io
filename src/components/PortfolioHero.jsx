@@ -1,6 +1,6 @@
-import React from "react"
 import sedaImg from '../assets/character.png';
 import { useTranslation } from "react-i18next";
+import {motion} from 'framer-motion';
 
 function PortfolioHero ({title = t("portfolio")}) {
 
@@ -28,7 +28,11 @@ function PortfolioHero ({title = t("portfolio")}) {
             <div className="mx-auto ">
                 <div className="flex flex-row items-center justify-center gap-6 pt-8 md:gap-4 md:pt-14">
                     <div className="shrink-0">
-                        <img 
+                        <motion.img
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.5, type: "spring", stiffness: 300, damping: 20 }}
+                            viewport={{ once: true }} 
                             src={sedaImg}
                             alt="Sedanur illustration"
                             className="h-64 w-auto md:h-80 xl:h-96 object-contain select-none"
@@ -45,8 +49,11 @@ function PortfolioHero ({title = t("portfolio")}) {
                                     const cfg = styleMap[i] || { r: 0, y: 0 };
                                     const isTall = i === 3 ; 
                                     return (
-                                        <span
+                                        <motion.span
                                             key={i}
+                                            initial={{ opacity: 0, y: -20 }}
+                                            animate={{ opacity: 1, y: 0 }}
+                                            transition={{ delay: i * 0.15, type: "spring", stiffness: 300, damping: 20 }}
                                             className={[
                                                 "inline-block leading-none",
                                                 isTall
@@ -59,14 +66,19 @@ function PortfolioHero ({title = t("portfolio")}) {
                                             }}
                                             >
                                                 {ch}
-                                        </span>
+                                        </motion.span>
                                     );
                                 })}
                         </h1>
 
-                        <h2 className="mt-6 max-w-md text-left text-lg font-medium leading-snug text-gray-700 md:mt-4 md:text-left md:text-xl dark:text-gray-300"> 
+                        <motion.h2 
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: letters.length * 0.15 + 0.3, type: "spring", stiffness: 300, damping: 20 }}
+                            viewport={{ once: true }}
+                            className="mt-6 max-w-md text-left text-lg font-medium leading-snug text-gray-700 md:mt-4 md:text-left md:text-xl dark:text-gray-300"> 
                             {t("title")}
-                        </h2>
+                        </motion.h2>
                     </div>
                 </div>
             </div>

@@ -62,7 +62,7 @@ function ContactSection() {
                     {t("contactme")}
             </motion.h2>
             <div className="mx-auto">
-                <div className="flex flex-row-reverse items-center justify-center gap-6 pt-6 md:gap-4 md:pt-6">
+                <div className="flex flex-col md:flex-row-reverse items-center justify-center gap-6 pt-6 md:gap-4 md:pt-6 ">
                     <div className="shrink-0">
                         <motion.img 
                             src={sedaImg}
@@ -76,7 +76,7 @@ function ContactSection() {
                             />
                     </div>
 
-                    <div className="text-xs md:text-lg text-gray-700 dark:text-white">
+                    <div className="text-xs md:text-lg text-gray-700 dark:text-white text-center md:text-left">
                         <ul>
                             {ContactData.map((item, idx) => (
                                 <motion.li 
@@ -86,15 +86,14 @@ function ContactSection() {
                                     viewport={{ once: true, amount: 0.4 }}
                                     transition={{ duration: 0.35, delay: idx * 0.1 }}
                                     className="mb-4" >
-                                    <div className="font-semibold flex">
-                                        {item.contactIcon}
-                                        <a href={item.contactLink} target="_blank">{item.contactId}</a>
+                                    <div className="font-semibold flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start">
+                                        <span className='flex'>{item.contactIcon} <a href={item.contactLink} target="_blank">{item.contactId}</a></span>
                                     </div>
                                 </motion.li>
                             ))}
                         </ul>
                         
-                       
+                       {/* className="font-semibold flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start"> */}
 
                     </div>
                     

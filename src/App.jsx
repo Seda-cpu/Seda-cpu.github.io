@@ -9,7 +9,7 @@ function App() {
 
   return (
     <Router>
-      <div className="bg-background dark:bg-darkGray min-h-screen">
+      <div className="bg-white dark:bg-gray-900 min-h-screen">
         <div className="text-titleBlack dark:text-softGray">
           <Routes>
             <Route path="/" element={<MainLayout> <Home/> </MainLayout>} />

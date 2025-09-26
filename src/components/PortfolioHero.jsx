@@ -24,7 +24,7 @@ function PortfolioHero ({title = t("portfolio")}) {
     
     return (
 
-        <section className="w-full bg-white pt-10">
+        <section className="w-full bg-white pt-10 dark:bg-gray-800">
             <div className="mx-auto ">
                 <div className="flex flex-row items-center justify-center gap-6 pt-8 md:gap-4 md:pt-14">
                     <div className="shrink-0">
@@ -38,7 +38,7 @@ function PortfolioHero ({title = t("portfolio")}) {
                     
                     {/* text */}
                     <div className="mt-[-10vw]">
-                        <h1 className="flex flex-wrap items-end gap-1 font-extrabold tracking-tight text-neutral-900 select-none"
+                        <h1 className="flex flex-wrap items-end gap-1 font-extrabold tracking-tight text-neutral-900 select-none dark:text-white"
                             aria-label={title}> 
                             
                                 {letters.map((ch, i) => {
@@ -64,7 +64,7 @@ function PortfolioHero ({title = t("portfolio")}) {
                                 })}
                         </h1>
 
-                        <h2 className="mt-6 max-w-md text-left text-lg font-medium leading-snug text-gray-700 md:mt-4 md:text-left md:text-xl"> 
+                        <h2 className="mt-6 max-w-md text-left text-lg font-medium leading-snug text-gray-700 md:mt-4 md:text-left md:text-xl dark:text-gray-300"> 
                             {t("title")}
                         </h2>
                     </div>

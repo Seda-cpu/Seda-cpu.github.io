@@ -63,7 +63,7 @@ function ContactSection() {
                             />
                     </div>
 
-                    <div className="text-sm md:text-lg text-gray-700">
+                    <div className="text-sm md:text-lg text-gray-700 dark:text-white">
                         <ul>
                             {ContactData.map((item, idx) => (
                                 <li key={idx} className="mb-4" >

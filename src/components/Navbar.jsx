@@ -10,7 +10,7 @@ function Navbar() {
     const {t, i18n} = useTranslation();
 
     return (
-        <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-4 bg-white dark:bg-gray-900 shadow"> {/* flex items-center justify-between px-6 py-4 bg-white dark:bg-sky-950 shadow */}
+        <nav className="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 py-4 bg-white dark:bg-gray-900 dark:text-white shadow"> {/* flex items-center justify-between px-6 py-4 bg-white dark:bg-sky-950 shadow */}
             <div className="flex items-center">
                 <span className="text-2xl mr-2">🌟</span>
                 <span className="font-bold text-lg">Sedanur Kırcı</span>

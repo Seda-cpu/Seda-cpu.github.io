@@ -1,0 +1,48 @@
+{
+    "portfolio": "PORTFOLYO",
+    "title": "Robotik yazılım mühendisi, geliştirici, okur ve kaşif",
+    "education": "Eğitim",
+    "lisansSchool": "Sakarya Uygulamalı Bilimler Üniversitesi",
+    "lisansDepartment": "Mekatronik Mühendisliği Lisans",
+    "lisansGano": "3.13 / 4.00",
+    "lisansYear": "2018 - 2022",
+    "yuksekLisansSchool": "Sakarya Uygulamalı Bilimler Üniversitesi",
+    "yuksekLisansDepartment": "Bilgisayar Mühendisliği Yüksek Lisans",
+    "yuksekLisansYear": "2025 - Günümüz",
+    "experience": "Deneyim",
+    "karmetalCompany": "Kar Metal",
+    "karmetalPosition": "Robotik Yazılım Mühendisi",
+    "karmetalYear": "Şub 2022 - Haz 2025",
+    "karmetalDescription": "Robot İşletim Sistemini (ROS) kullanan AMR'ler için görüntü işleme ve derin öğrenme çözümleri üzerinde çalıştım. Robot filoların kontrol edildiği Web uygulamalar geliştirdim.",
+    "deneyapCompany": "Deneyap Türkiye",
+    "deneyapPosition": "İleri Robotik Eğitmeni",
+    "deneyapYear": "May 2022 - Eyl 2022",
+    "deneyapDescription": "Deneyap atölyelerinde lise düzeyindeki öğrencilere ileri robotik eğitmeni olarak kodlama ve robotik oturumları gerçekleştirdim.",
+    "publications": "Yayınlarım",
+    "ShowPublication": "Yayını göster",
+    "MelanomaTitle": "Derin Öğrenme ile Deri Rahatsızlıklarının Erken Teşhisi için Bir Sistem Tasarımı",
+    "TDATitle": "Endüstriyel Otonom Mobil Robotlar İçin Özgün Bir Yanaşma Algoritması: TDA",
+    "projects": "Projelerim",
+    "servantTTitle": "Derin Öğrenme Tabanlı Palet Konumlandırma Sistemi",
+    "servantTDescription": "Servant-T robotunun palet alma operasyonlarında, derin öğrenme temelli bir sistem geliştirdim. Modelin çıktısı üzerinden nokta bulutu kümeleri çıkarıp, paletin konumunu belirledim ve harita dönüşümlerini uyguladım.",
+    "karmetaldeGerceklestirilmistir":"Bu çalışma Karmetal Ar-Ge ekibinde çalıştığım dönemde gerçekleştirilmiştir.",
+    "servantWTitle": "Makine Öğrenmesi Kümeleme Yöntemleri ile Palet Algılama - RANSAC Metod",
+    "servantWDescription": "Otonom mobil robotun paletleri düşük ışık koşullarında da güvenilir şekilde algılayabilmesi için nokta bulutu verisi işleme algoritmaları geliştirdim. Bu süreçte RANSAC gibi kümeleme yöntemlerini kullanarak palet nesnesini sahadaki diğer yapılardan ayırdım.",
+    "qrTitle":"QR Kod Algılama ve Konumlandırma Sistemi",
+    "qrDescription":"Mobil robotun sahada bulunan QR kodlarını algılayıp kameraya göre 3D konumlarını hesaplamasını sağlayan bir algoritma geliştirdim. Bu sayede robot, QR kodlarını yalnızca okumakla kalmayıp, onların uzaydaki pozisyonlarını da hesaplayarak navigasyon süreçlerinde kullanabildi.",
+    "KFMTitle":"KFM - Robot Filosu Yönetim Sistemi Web Uygulaması",
+    "KFMDescription":"Robotların kontrolü ve takibini sağlayacak web tabanlı bir arayüz geliştirdim. Bu uygulamanın frontend (React) ve backend (Node.js, Flask) kısımlarını tasarlayıp kodladım. Uygulama, ROS ile entegrasyon ve haberleşmeyi destekleyecek şekilde geliştirildi. Ayrıca sistemin ihtiyaç duyduğu veritabanı yönetimi tarafını da üstlendim. Bu web uygulaması local ortamda çalışacak şekilde yapılandırıldı.",
+    "fersahTitle": "FERSAH - İnsansız Su Altı Aracı",
+    "fersahDescription": "Üniversite ekibi olarak geliştirdiğimiz insansız su altı aracının (ROV/AUV) otonom görevlerini yerine getirebilmesi için görüntü işleme tabanlı yazılımlar geliştirdim. Özellikle geçit tespiti (gate detection) üzerinde çalıştım.",
+    "teknofestIcinGerceklestirilmistir":"Bu proje Teknofest 2020 için gerçekleştirilmiştir.",
+    "omnibotTitle": "OMNIBOT - 3 Tekerlekli Holonomik Mobil Robot",
+    "omnibotDescription": "Lisans bitirme projem kapsamında, 3 tekerlekli holonomik sürüş kabiliyetine sahip bir mobil robot geliştirdim. Bu robot, ROS tabanlı otonom hareket ve haritalama yapabilme yetenekleriyle donatıldı.",
+    "formore":"incele",
+    "contactme":"Benimle iletişime geçin",
+    "highlights":"Kariyer Öne Çıkanlar"
+
+
+
+
+
+}

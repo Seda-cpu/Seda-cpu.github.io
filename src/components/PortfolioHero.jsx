@@ -1,13 +1,16 @@
 import React from "react"
 import sedaImg from '../assets/character.png';
+import { useTranslation } from "react-i18next";
 
-function PortfolioHero ({title = "PORTFOLIO"}) {
+function PortfolioHero ({title = t("portfolio")}) {
+
+    const {t, i18n} = useTranslation();
 
     const styleMap = [
         { r: -6, y: 0 }, // P
         { r: 3, y: 5 }, // O
         { r: -4, y: 0 }, // R
-        { r: 8, y: -6 }, // T (taller vibe)
+        { r: 8, y: -6 }, // T 
         { r: -5, y: -2 },// F
         { r: 4, y: 8 }, // O
         { r: -3, y: 0 }, // L
@@ -16,16 +19,14 @@ function PortfolioHero ({title = "PORTFOLIO"}) {
     ];
 
    
-
-    
     const letters = title.split("");
  
     
     return (
-        <section className="relative w-full bg-white">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-col-reverse items-center justify-center gap-6 py-8 md:flex-row md:items-center md:gap-4 md:py-14">
-                    {/* character */}
+
+        <section className="w-full bg-white pt-10">
+            <div className="mx-auto ">
+                <div className="flex flex-row items-center justify-center gap-6 pt-8 md:gap-4 md:pt-14">
                     <div className="shrink-0">
                         <img 
                             src={sedaImg}
@@ -42,16 +43,15 @@ function PortfolioHero ({title = "PORTFOLIO"}) {
                             
                                 {letters.map((ch, i) => {
                                     const cfg = styleMap[i] || { r: 0, y: 0 };
-                                    const isTall = i === 3 ; // make the "T" visually taller like the mockup
+                                    const isTall = i === 3 ; 
                                     return (
                                         <span
                                             key={i}
                                             className={[
-                                                // base size responsive
                                                 "inline-block leading-none",
                                                 isTall
-                                                ? "text-[20vw] sm:text-[16vw] md:text-[12vw] lg:text-[10vw]"
-                                                : "text-[18vw] sm:text-[14vw] md:text-[10vw] lg:text-[9vw]",
+                                                ? "text-[8vw] sm:text-[10vw] md:text-[11vw] lg:text-[9vw]" 
+                                                : "text-[6.5vw] sm:text-[8vw] md:text-[9vw] lg:text-[8vw]", 
                                                 ].join(" ")}
                                             style={{
                                             transform: `rotate(${cfg.r}deg) translateY(${cfg.y}px)`,
@@ -64,16 +64,14 @@ function PortfolioHero ({title = "PORTFOLIO"}) {
                                 })}
                         </h1>
 
-                        <h2 className="mt-2 max-w-md text-center text-lg font-medium leading-snug text-gray-700 md:mt-4 md:text-left md:text-xl">
-                            Robotics software engineer, designer, and lifelong learner
+                        <h2 className="mt-6 max-w-md text-left text-lg font-medium leading-snug text-gray-700 md:mt-4 md:text-left md:text-xl"> 
+                            {t("title")}
                         </h2>
                     </div>
                 </div>
             </div>
         </section>
     )
-
-
 }
 
 

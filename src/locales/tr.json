@@ -1,6 +1,6 @@
 {
     "portfolio": "PORTFOLYO",
-    "title": "Robotik yazılım mühendisi, geliştirici, okur ve kaşif",
+    "title": "Yazılım mühendisi, geliştirici, okur ve kaşif",
     "education": "Eğitim",
     "lisansSchool": "Sakarya Uygulamalı Bilimler Üniversitesi",
     "lisansDepartment": "Mekatronik Mühendisliği Lisans",
@@ -42,7 +42,11 @@
     "highlights":"Kariyer Öne Çıkanlar",
     "skills":"Yetenekler",
     "daysAtKarmetal":"Karmetal Günlükleri (arşiv)",
-    "kitaplarim":"Kitap Listem"
+    "kitaplarim":"Kitap Listem",
+    "CasemCompany": "Casem ESG",
+    "CasemPosition": "Yazılım Mühendisi",
+    "CasemYear": "Kasım 2025 - Günümüz",
+    "CasemDescription": "Casem ESG'de yazılım mühendisi olarak çalışıyorum. Sürdürülebilirlik ve çevresel, sosyal, yönetişim (ESG) çözümleri geliştiren projelerde yer alıyorum."
 
 
 

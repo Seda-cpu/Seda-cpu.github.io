@@ -7,6 +7,12 @@ function ExperienceSection() {
 
     const experienceData = [
         {
+            company: t("CasemCompany"),
+            position: t("CasemPosition"),
+            year: t("CasemYear"),
+            description: t("CasemDescription"),
+        },
+        {
             company: t("karmetalCompany"),
             position: t("karmetalPosition"),
             year: t("karmetalYear"),
